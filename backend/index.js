@@ -9,7 +9,11 @@ import categoryRoutes from "./routes/categoryRoutes.js"
 import productRoutes from "./routes/productRoutes.js"
 import uploadRoutes from "./routes/uploadRoutes.js"
 import orderRoutes from "./routes/orderRoutes.js"
+<<<<<<< HEAD
 import cors from "cors"
+=======
+import cors from "cors
+>>>>>>> 52685171323f0d4f005d122e386f5daa726b79a3
 // utils
 
 import connectDB from "./config/db.js"
@@ -22,7 +26,7 @@ connectDB()
 const app = express()
 
 app.use(cors({
-    origin:["https://e-commerce-react-app-sepia.vercel.app/"],
+    origin:["https://e-commerce-react-app-8xks.vercel.app/"],
     methods: ["POST", "GET", "PUT"],
     credentials: true
 }))
