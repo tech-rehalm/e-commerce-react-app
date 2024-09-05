@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api/": "https://e-commerce-react-app-sepia.vercel.app/",
-      "/uploads/": "https://e-commerce-react-app-sepia.vercel.app/",
+      "/api/": "http://localhost:5000",
+      "/uploads/": "http://localhost:5000",
     }
   }
 })
