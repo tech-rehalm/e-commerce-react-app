@@ -20,6 +20,11 @@ connectDB()
 
 const app = express()
 
+app.use(cors({
+    origin:["https://e-commerce-react-app-sepia.vercel.app/"],
+    methods: ["POST", "GET", "PUT"],
+    credentials: true
+}))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
